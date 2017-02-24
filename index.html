@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
     <link href="css/animate.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
     <link href="css/style.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Sansita" rel="stylesheet">
     <title>Ping Pong Game</title>
@@ -19,7 +20,7 @@
         <img src="img/logo.png" alt="logo of the page" id="logo" class="animated bounceInDown" href="#">
         <p><a href="index.html" id="home">HOME</a>
             <a href="#" id="rules" data-toggle="modal" data-target="#modalrules">Rules</a>
-            <a href="#modalabout" id="about">About</a>
+            <a href="#" data-toggle="modal" data-target="#modalabout" id="about">About</a>
             <p>
     </nav>
 
@@ -37,7 +38,7 @@
                         <li>Numbers divisible by 5 become "PONG"</li>
                         <li>Numbers divisible by 15 become "PING-PONG"</li>
                     </ul>
-                <h4>NOTE: All non-numberic input do not work with the Ping Pong Game</h4>
+                    <h4>NOTE: All non-numberic input do not work with the Ping Pong Game</h4>
 
                 </div>
                 <div class="modal-footer">
@@ -47,7 +48,36 @@
         </div>
     </div>
 
-    <div class="container">
+    <div class="modal fade" id="modalabout" tabindex="-2" role="dialog" aria-labelledby="modalrules" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h2 class="modal-title" id="myModalLabel">About the Ping Pong Game</h2>
+                </div>
+                <div class="modal-body">
+                    <h4>Created by:</h4>
+                    <p>Aduma Tevin</p>
+                    <h4><i class="fa fa-4x fa-github text-primary sr-icons"></i>GitHub Username:</h4>
+                    <p>kurosakiaduma</p>
+
+                    <h4>Languages used to create the game:</h5>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>jQuery</li>
+                            <li>Javascript</li>
+                                        </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="container animated shake">
         <h1>Ping Pong Game</h1>
         <h2>Try out the Ping Pong game</h2>
         <h3>(Check out the Rules at the top before you begin)</h3>
