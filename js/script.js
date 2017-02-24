@@ -21,4 +21,8 @@ $(function() {
     $("ul#showOutput").empty();
     var inputNumber = parseInt($("#number").val());
     var output = pingPong(inputNumber);
-});
+    for (var i = 1; i <= inputN; i++) {
+     $("#showOutput").append("<li>" + output[i] + "</li>");
+   }
+  });
+  });
