@@ -18,4 +18,5 @@ var pingPong = function(inputNumber) {
 $(function() {
   $(".pp" ).submit(function(event) {
     event.preventDefault();
+    $("ul#showOutput").empty();
 });
