@@ -25,6 +25,11 @@ nav {
     color: white;
 }
 
+#modalrules{
+    background-image: url("../img/md.png");
+}
+
+
 h1 {
     text-decoration: underline;
 }

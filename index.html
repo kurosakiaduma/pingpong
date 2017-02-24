@@ -16,11 +16,37 @@
 
 <body>
     <nav>
-        <img src="img/logo.png" alt="logo of the page" id="logo" class="animated bounceInDown">
+        <img src="img/logo.png" alt="logo of the page" id="logo" class="animated bounceInDown" href="#">
         <p><a href="index.html" id="home">HOME</a>
-        <a href="#modalrules" id="rules">Rules</a>
-        <a href="#modalabout" id="about">About</a><p>
+            <a href="#" id="rules" data-toggle="modal" data-target="#modalrules">Rules</a>
+            <a href="#modalabout" id="about">About</a>
+            <p>
     </nav>
+
+    <div class="modal fade" id="modalrules" tabindex="-1" role="dialog" aria-labelledby="modalrules" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h2 class="modal-title" id="myModalLabel">Rules of Ping Pong Game</h2>
+                </div>
+                <div class="modal-body">
+                    <h3>Follow these instructions to learn how the Ping Pong Game works:</h3>
+                    <ul>
+                        <li>Numbers divisible by 3 become "PING"</li>
+                        <li>Numbers divisible by 5 become "PONG"</li>
+                        <li>Numbers divisible by 15 become "PING-PONG"</li>
+                    </ul>
+                <h4>NOTE: All non-numberic input do not work with the Ping Pong Game</h4>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="container">
         <h1>Ping Pong Game</h1>
         <h2>Try out the Ping Pong game</h2>
@@ -29,7 +55,7 @@
         <div id="pingpong">
 
             <form class="pp">
-                <input type="number" id="number" name="number" placeholder="Insert your number here"  min="1">
+                <input type="number" id="number" name="number" placeholder="Insert your number here" min="1">
                 <button type="submit" class="btn btn-success btn-md">PING PONG!</button>
             </form>
         </div>
