@@ -19,4 +19,6 @@ $(function() {
   $(".pp" ).submit(function(event) {
     event.preventDefault();
     $("ul#showOutput").empty();
+    var inputNumber = parseInt($("#number").val());
+    var output = pingPong(inputNumber);
 });
