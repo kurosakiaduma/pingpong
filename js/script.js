@@ -21,8 +21,14 @@ $(function() {
     $("ul#showOutput").empty();
     var inputNumber = parseInt($("#number").val());
     var output = pingPong(inputNumber);
-    for (var i = 1; i <= inputN; i++) {
+    for (var i = 1; i <= inputNumber; i++) {
      $("#showOutput").append("<li>" + output[i] + "</li>");
    }
   });
+  $("#modalrules").click(function() {
+    $("#modal1").show();
   });
+  $("#modalabout").click(function() {
+    $("#modal2").show();
+  });
+});
