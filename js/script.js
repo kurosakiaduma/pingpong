@@ -18,6 +18,7 @@ var pingPong = function(inputNumber) {
 $(function() {
   $(".pp" ).submit(function(event) {
     event.preventDefault();
+    $(".output").show();
     $("ul#showOutput").empty();
     var inputNumber = parseInt($("#number").val());
     var output = pingPong(inputNumber);
@@ -25,10 +26,4 @@ $(function() {
      $("#showOutput").append("<li>" + output[i] + "</li>");
    }
   });
-  $("#modalrules").click(function() {
-    $("#modal1").show();
-  });
-  $("#modalabout").click(function() {
-    $("#modal2").show();
-  });
-});
+ });
