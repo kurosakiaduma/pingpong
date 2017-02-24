@@ -1,4 +1,4 @@
-// business logic
+// back-end logic
 var pingPong = function(inputNumber) {
   var result = [];
   for (var i = 0; i <= inputNumber; i++ ) {
@@ -14,3 +14,8 @@ var pingPong = function(inputNumber) {
   }
   return result;
 };
+// user interface
+$(function() {
+  $(".pp" ).submit(function(event) {
+    event.preventDefault();
+});
